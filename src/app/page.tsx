@@ -16,7 +16,7 @@ type Account = {                                         // от сюда
   tags: string[];
   theme: string;
   skinCategory: SkinCategory;
-  inventoryType: "Нож + перчатки" | "Полный инвентарь";
+  inventoryType: "Нож + перчатки" | "Полный инвентарь" | "Дополнительные скины";
   isRented: boolean;
   images: string[];
 };
@@ -37,7 +37,7 @@ const accounts: Account[] = [
     theme: "purple",
     skinCategory: "additional-skins",
     inventoryType: "Дополнительные скины", 
-    isRented: 1,
+    isRented: true,
     images: [
       "/images/accounts/purple-wave/purple-wave.jpg",
       "/images/accounts/purple-wave/purple-wave-2.jpg",
